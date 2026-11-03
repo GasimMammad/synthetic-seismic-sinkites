@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 *.tmp.png
 .venv/
+figures/banner_*.png

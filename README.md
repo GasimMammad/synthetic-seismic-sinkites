@@ -1,6 +1,6 @@
 # Synthetic seismic model of sinkite mounds
 
-![Synthetic seismic amplitude blending into impedance across a sinkite mound field](figures/banner_dark.png)
+![Impedance model, synthetic seismic and pseudo-inversion of a sinkite mound field](figures/synthetic_sinkites.png)
 
 A small Python script that builds a 2D acoustic impedance model of a sinkite and floatite mound field, turns it into synthetic seismic with a convolutional model, and makes a smoothed impedance section that behaves roughly like a band-limited inversion result.
 
@@ -18,8 +18,6 @@ Sinkites are km-scale bodies of dense sand in the northern North Sea that appear
 - Polygonal faults in the ooze-rich interval, inclined and with small throws
 - A layered deeper section
 
-![Impedance model, synthetic seismic and pseudo-inversion](figures/synthetic_sinkites.png)
-
 ## How it works
 
 1. Build an acoustic impedance (AI) section on a regular grid. Units are nominal, with 1 sample = 1 ms TWT and 1 trace = 4 m.
@@ -33,8 +31,7 @@ Sinkites are km-scale bodies of dense sand in the northern North Sea that appear
 pip install -r requirements.txt
 
 python synthetic_sinkites.py figure                  # three-panel figure
-python synthetic_sinkites.py banner --style dark     # 1584 x 396 banner
-python synthetic_sinkites.py banner --style light
+python synthetic_sinkites.py banner --style dark     # 1584 x 396 banner image
 ```
 
 Add `--seed 3` (or any number) for a different random realisation, and `-o path.png` to choose the output file.
